@@ -22,21 +22,28 @@
   </head>
   <body>
     <!--Верхня лінія-->
-    <header>
-      <a class="logo black" href=""><span class="accent">Web</span>Studio</a>
-      <div class="container">
+    <header class="header">
+      <div class="container-wrapper">
+        <a class="logo black" href=""><span class="accent">Web</span>Studio</a>
+      </div>
+      <div class="container header-item">
         <nav class="header-nav">
           <ul class="header-list list">
-            <li><a href="./studio.html" class="list-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="list-link">Портфоліо</a></li>
-            <li><a href="" class="list-link">Контакти</a></li>
+            <li class="item">
+              <a href="./studio.html" class="list-link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="list-link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="list-link">Контакти</a></li>
           </ul>
         </nav>
-
-        <a class="header-mail" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="header-contacts">
+          <a class="header-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
 
@@ -65,7 +72,7 @@
 
         /* Портфоліо */
 
-        <div class="container">
+        <div class="container page">
           <ul class="portfolio list">
             <li class="portfolio-item">
               <a href="" class="portfolio-link">
