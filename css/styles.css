@@ -30,25 +30,27 @@ body {
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
+
+h2 {
+  display: none;
+}
+
+.is-active {
+  display: block;
+}
+
 .header {
   display: flex;
+  border: 1px solid #ececec;
 }
-.container-wrapper {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
-  min-width: 145px;
-}
-.some-item:nth-child(8) {
-  background-color: #fff;
-  display: flex;
-}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  margin-right: 93px;
 }
 .black {
   color: #000000;
@@ -62,7 +64,6 @@ body {
 
 .header-list {
   display: flex;
-  column-gap: 50px;
 }
 .header-list li {
   margin-right: 50px;
@@ -76,10 +77,13 @@ body {
   column-gap: 50px;
   justify-content: flex-end;
 }
+
 .header-item {
   display: flex;
   align-items: center;
+  height: 80px;
 }
+
 .list {
   list-style: none;
   padding: 0;
@@ -127,7 +131,7 @@ body {
 /* Шапка */
 
 .container.hero-wrap {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-item {
@@ -137,11 +141,13 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 
+  max-width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   padding: 10px 32px;
@@ -155,7 +161,8 @@ body {
 
 /* Діяльність*/
 .section-features {
-  margin: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -193,7 +200,7 @@ body {
   line-height: 1.2;
   text-align: center;
 
-  margin-bottom: 0;
+  margin-bottom: 50;
   margin-top: 0;
 }
 
@@ -201,6 +208,8 @@ body {
 
 .team {
   background-color: var(--secondary-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -209,29 +218,22 @@ body {
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
-.team .container {
-  padding: 0px 215px 94px 215px;
+  margin-bottom: 50;
 }
 
 .team-wrap {
   min-width: 1170px;
-  margin-left: auto
-  margin-right: auto
 }
 
 .team-list {
-    display: flex;
+  display: flex;
   column-gap: 30px;
   justify-content: center;
 }
 
 .team-member {
   width: calc((100% - 90) / 4);
+  text-align: center;
 }
 
 .team-name {
@@ -244,11 +246,15 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+
+/* Футер */
+
 .adress {
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  margin-top: 20px;
 }
 .footer-mail,
 .footer-tel {
@@ -258,19 +264,9 @@ body {
   text-decoration: none;
 }
 
-.container-wrap {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 60px;
-  min-width: 145px;
-  margin-left: 215px;
-}
-
 .footer .container {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  margin-left: 215px;
-  min-width: 231px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer,
@@ -313,15 +309,12 @@ body {
 /* Портфоліо */
 
 .menu {
-  margin-top: 98px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container.btn {
-  margin-top: 94px;
-  margin-bottom: 34px;
-  min-width: 575px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .menu-list {
@@ -331,7 +324,6 @@ body {
 }
 
 .container.page {
-  
 }
 
 .portfolio.list {
@@ -344,8 +336,7 @@ body {
 
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
-
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -356,9 +347,8 @@ body {
   margin-bottom: 0;
 }
 
-.container.bg {
-  margin: 20px 24px;
-  min-width: 322px;
+.bg {
+  padding: 20px 24px;
 }
 .portfolio-name {
   color: var(--primary-text-color);
