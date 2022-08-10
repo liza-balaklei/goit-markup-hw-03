@@ -213,7 +213,7 @@ li {
   line-height: 1.2;
   text-align: center;
 
-  margin-bottom: 50;
+  margin-bottom: 50px;
   margin-top: 0;
 }
 
@@ -231,7 +231,7 @@ li {
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: 50;
+  margin-bottom: 50px;
   display: block;
 }
 
@@ -287,6 +287,9 @@ li {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+}
+
+.contacts {
   margin-top: 9px;
 }
 
@@ -334,17 +337,11 @@ li {
   padding-bottom: 94px;
 }
 
-.container.btn {
-  margin-bottom: 50px;
-}
-
 .menu-list {
   display: flex;
   column-gap: 8px;
   justify-content: center;
-}
-
-.container.page {
+  margin-bottom: 34px;
 }
 
 .portfolio.list {
